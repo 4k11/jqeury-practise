@@ -51,3 +51,11 @@ function colorMatch(one, two, three, four) {
     one !== undefined
   );
 }
+
+function horizontal() {
+  for (var row = 0; row < 6; row++) {
+    for (var col = 0; col < 7; col++){
+        if (colorMatch(r))
+    }
+  }
+}
