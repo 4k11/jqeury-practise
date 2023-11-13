@@ -143,7 +143,7 @@ var currentPlayer = 1;
 var currentName = p1;
 var currentColor = p1c;
 
-$("h3").text(p1 + " its your turn, go on ,pick a column :)");
+$("h3").text(p1 + " its your turn, pick a column :)");
 
 $(".board button").on("click", function () {
   var col = $(this).closest("td").index();
@@ -160,11 +160,11 @@ $(".board button").on("click", function () {
 
   if (currentPlayer === 1) {
     currentName = p1;
-    $("h3").text(currentName + " its your turn, go on ,pick a column :)");
+    $("h3").text(currentName + " its your turn, pick a column :)");
     currentColor = p1c;
   } else {
     currentName = p2;
-    $("h3").text(currentName + " its your turn, go on ,pick a column :)");
+    $("h3").text(currentName + " its your turn, pick a column :)");
     currentColor = p2c;
   }
 });

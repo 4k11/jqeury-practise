@@ -1,8 +1,18 @@
+body {
+  background-color: blueviolet;
+  margin: auto;
+}
+
+.container {
+  background-color: blueviolet;
+  font-family: "Zen Dots", sans-serif;
+}
+
 .board button {
   width: 100px;
   height: 100px;
   background-color: grey;
   margin: 1px;
-  border: 1px solid black;
+  border: 2px solid orange;
   border-radius: 50%;
 }
