@@ -46,7 +46,7 @@ function colorMatch(one, two, three, four) {
     one === two &&
     one === three &&
     one === four &&
-    one !== "grey" &&
+    one !== "rgb(128, 128, 128)" &&
     one !== undefined
   );
 }
@@ -153,7 +153,6 @@ $(".board button").on("click", function () {
   changeColor(bottomAvail, col, currentColor);
 
   if (horizontal() || vertical() || diagonal()) {
-    $("h1").text(currentName + " YOU WIN!!");
     gameOver(currentName);
   }
 
