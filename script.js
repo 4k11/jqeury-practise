@@ -1,7 +1,7 @@
-var p1 = prompt("Blue Player 1 enter your name:");
+var p1 = prompt("Blue Player name:");
 var p1c = "rgb(86, 151, 255)";
 
-var p2 = prompt("Red Player 2 enter your name:");
+var p2 = prompt("Red Player name:");
 var p2c = "rgb(237, 45, 73)";
 
 var game_on = true;
@@ -143,7 +143,7 @@ var currentPlayer = 1;
 var currentName = p1;
 var currentColor = p1c;
 
-$("h3").text(p1 + " its your turn, pick a column :)");
+$("h3").text(p1 + " its your turn, click a column :)");
 
 $(".board button").on("click", function () {
   var col = $(this).closest("td").index();
@@ -160,11 +160,11 @@ $(".board button").on("click", function () {
 
   if (currentPlayer === 1) {
     currentName = p1;
-    $("h3").text(currentName + " its your turn, pick a column :)");
+    $("h3").text(currentName + " its your turn, click a column :)");
     currentColor = p1c;
   } else {
     currentName = p2;
-    $("h3").text(currentName + " its your turn, pick a column :)");
+    $("h3").text(currentName + " its your turn, click a column :)");
     currentColor = p2c;
   }
 });
