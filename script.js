@@ -142,7 +142,6 @@ function gameOver(name) {
       $("h1")
         .text(name + " has won! Refresh your browser to play again!")
         .css("fontSize", "50px");
-      break;
     }
   }
 }
