@@ -1,7 +1,13 @@
 var p1 = prompt("Blue Player name:");
+if (p1 == "") {
+  var p1 = "Player 1";
+}
 var p1c = "rgb(86, 151, 255)";
 
 var p2 = prompt("Red Player name:");
+if (p2 == "") {
+  var p2 = "Player 2";
+}
 var p2c = "rgb(237, 45, 73)";
 
 var game_on = true;
@@ -136,6 +142,7 @@ function gameOver(name) {
       $("h1")
         .text(name + " has won! Refresh your browser to play again!")
         .css("fontSize", "50px");
+      break;
     }
   }
 }
